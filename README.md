@@ -1,4 +1,3 @@
-# myPortfolioWebsite
 This is my personal portfolio website, built using HTML and CSS, to showcase my projects, experiences, and skills in a clean, organized way. The website is divided into multiple sections that highlight my background, technical abilities, and achievements.
 
 Features
