@@ -1,0 +1,133 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+
+
+.split-header { 
+  display: flex; /* makes the header horizontal */
+  justify-content: space-between; /* makes the text go to the left and the image goes to right */ 
+  align-items: center; /* aligns item to center*/ 
+  background-color: #000022; /* background color */
+  color: white; /* text color */
+  padding: 2rem; 
+  flex-wrap: wrap; /* allows wrapping on small screens (very important) */
+  gap: 1.5rem; /* the space between text and image */
+}
+
+.intro-text {
+  max-width: 600px; /* limits text width , improves readability */
+}
+
+.split-header h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+/* this code is for the small role description I added */
+.role-description{
+  font-size: 1.20rem;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* this could adjusts the pic */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* this makes the code mobile responsive */
+@media (max-width: 768px) { 
+  .split-header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+} 
+
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+header + section {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  margin-right: 0.5rem;
+}
+nav {
+  background: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color:#000022;
+  color: white;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block; /* makes the link as a block*/
+  padding: 10px 20px; /*  Adds space inside the button: 10px top & bottom  & 20px left & right */ 
+  background-color: white; /* the background color of the button */
+  color: black; /* the color of the text */
+  text-decoration: none;
+  border-radius: 8px; /* the border radius of the btn */
+  font-weight: bold; /* bold text */ 
+  font-size: 1em; /* sets the font size to the default size 1em = 100% */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adds a smooth animation when you hover: background-color fades over 0.3 seconds transform (used below) animates over 0.2 seconds*/
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adding shadow under the button box*/
+}
+
+.btn:hover {
+  background-color: rgb(206, 206, 206); /* the color that appears when you hover*/
+  transform: translateY(-2px); /* Moves the button up slightly (2 pixels) on hover to mimic a "lift" or "pop" effect — feels interactive and engaging.*/
+
+
+}
+
